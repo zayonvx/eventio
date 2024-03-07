@@ -81,10 +81,10 @@ eventio
 │   │   │   ├── resetPassword.ts
 │   │   │   └── signup.ts
 │   │   ├── pages/
-│   │   │   ├── forgot-password.tsx
-│   │   │   ├── login.tsx
-│   │   │   ├── reset-password.tsx
-│   │   │   └── signup.tsx
+│   │   │   ├── forgot-password.page.tsx
+│   │   │   ├── login.page.tsx
+│   │   │   ├── reset-password.page.tsx
+│   │   │   └── signup.page.tsx
 │   │   └── validations.ts
 │   ├── core/
 │   │   ├── components/
@@ -93,11 +93,11 @@ eventio
 │   │   └── layouts/
 │   │       └── Layout.tsx
 │   ├── pages/
-│   │   ├── _app.tsx
-│   │   ├── _document.tsx
-│   │   ├── 404.tsx
+│   │   ├── _app.page.tsx
+│   │   ├── _document.page.tsx
+│   │   ├── 404.page.tsx
 │   │   ├── index.test.tsx
-│   │   └── index.tsx
+│   │   └── index.page.tsx
 │   └── users/
 │       ├── hooks/
 │       │   └── useCurrentUser.ts

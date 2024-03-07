@@ -1,5 +1,5 @@
 import { vi, describe, it, beforeEach } from "vitest"
-import db from "db"
+import db from "../../../../db"
 import { hash256 } from "@blitzjs/auth"
 import forgotPassword from "./forgotPassword"
 import previewEmail from "preview-email"
@@ -14,7 +14,7 @@ vi.mock("@blitzjs/auth", async () => {
   const auth = await vi.importActual<Record<string, unknown>>("@blitzjs/auth")!
   return {
     ...auth,
-    generateToken: () => generatedToken
+    generateToken: () => generatedToken,
   }
 })
 

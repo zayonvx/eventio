@@ -1,5 +1,5 @@
-import { useCurrentUser } from "../../users/hooks/useCurrentUser"
-import logout from "../../auth/mutations/logout"
+import { useCurrentUser } from "@/features/users/hooks/useCurrentUser"
+import logout from "@/features/auth/mutations/logout"
 import { useMutation } from "@blitzjs/rpc"
 import Link from "next/link"
 import { Routes } from "@blitzjs/next"
