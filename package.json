@@ -5,7 +5,7 @@
     "dev": "blitz dev",
     "build": "blitz build",
     "start": "blitz start",
-    "studio": "blitz prisma studio",
+    "studio": "blitz prisma studio"
   },
   "prisma": {
     "schema": "db/schema.prisma"
@@ -49,12 +49,12 @@
     "husky": "8.0.2",
     "jsdom": "20.0.3",
     "lint-staged": "13.0.3",
-    "prettier": "^2.7.1",
+    "prettier": "^3.2.5",
     "prettier-plugin-prisma": "4.4.0",
     "pretty-quick": "3.1.3",
     "preview-email": "3.0.7",
     "typescript": "^4.8.4",
-    "vite-tsconfig-paths": "3.6.0",
+    "vite-tsconfig-paths": "3.6.0"
   },
   "private": true
 }
