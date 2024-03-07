@@ -5,10 +5,9 @@ import "src/styles/globals.css"
 import { RootErrorFallback } from "@/core/components/rootErrorFallback"
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const getLayout = Component.getLayout || ((page) => page)
   return (
     <ErrorBoundary FallbackComponent={RootErrorFallback}>
-      {getLayout(<Component {...pageProps} />)}
+      <Component {...pageProps} />
     </ErrorBoundary>
   )
 }

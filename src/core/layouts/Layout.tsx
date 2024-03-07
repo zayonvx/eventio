@@ -1,16 +1,29 @@
 import Head from "next/head"
-import React, {FC} from "react"
-import {BlitzLayout} from "@blitzjs/next"
+import React from "react"
+import { BlitzLayout } from "@blitzjs/next"
 
-const Layout: BlitzLayout<{title?: string; children?: React.ReactNode}> = ({title, children}) => {
+type Props = {
+  title?: string
+  children?: React.ReactNode
+  maxWidth?: number
+}
+const Layout: BlitzLayout<Props> = ({ title, children, maxWidth = 800 }) => {
   return (
     <>
       <Head>
         <title>{title || "eventio"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {children}
+      <Suspense fallback="Loading...">
+        <div
+          style={{
+            width: "100%",
+            maxWidth: maxWidth,
+          }}
+        >
+          {children}
+        </div>
+      </Suspense>
     </>
   )
 }
