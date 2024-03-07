@@ -1,5 +1,5 @@
 import Head from "next/head"
-import React from "react"
+import React, { Suspense } from "react"
 import { BlitzLayout } from "@blitzjs/next"
 
 type Props = {
